@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace DevAccounts.Domain.Repositories {
+    public interface IProductRepository : IDisposable {
+        List<Product> GetProducts();
+        List<Product> GetProduct(int id);
+        void InsertProduct(Product product);
+        void UpdateProduct(Product product);
+        void DeleteProduct(int Id);
+    }
+}
